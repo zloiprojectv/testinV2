@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+/* Добавьте стили для новых кнопок */
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.control-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  flex: 1;
+}
+
+.control-button:hover {
+  background: #0056b3;
+}
+
+.reset-button {
+  background: #dc3545;
+}
+
+.reset-button:hover {
+  background: #a71d2a;
+}

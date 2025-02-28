@@ -66,3 +66,7 @@
 .reset-button:hover {
   background: #a71d2a;
 }
+
+.timer-container {
+  transition: opacity 0.3s ease;
+}

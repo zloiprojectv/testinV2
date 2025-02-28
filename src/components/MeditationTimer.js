@@ -35,9 +35,11 @@ const MeditationTimer = () => {
     setIsPaused(false);
   };
 
+  // Исправленная функция сброса
   const resetTimer = () => {
-    setTimeLeft(initialTime);
-    setIsPaused(false);
+    setIsActive(false);  // <-- Скрываем кнопки управления
+    setTimeLeft(0);      // <-- Сбрасываем таймер
+    setInitialTime(0);   // <-- Сбрасываем начальное время
   };
 
   const formatTime = (seconds) => {
